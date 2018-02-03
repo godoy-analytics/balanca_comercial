@@ -1,2 +1,5 @@
-# balanca_comercial
-This a database setup feeded with open data to make the brazilian trade balance
+# BRAZILIAN TRADE BALANCE
+
+This is a database setup fed with open data from the Brazilian government.
+
+
