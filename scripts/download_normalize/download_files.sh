@@ -2,8 +2,8 @@
 
 
 # VARIABLES
-download_dir="./raw_data/"
-files_list="files_list2"
+download_dir="../../data/raw_data/"
+files_list="download_list_2"
 
 echo "Downloading data. Please wait..."
 

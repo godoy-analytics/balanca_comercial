@@ -6,8 +6,8 @@
 # 2) NCM_SH2
 # 3) NCM_SECROM
 
-data_dir="./raw_data"
-clean_data_dir="./clean_data"
+data_dir="../../data/raw_data"
+clean_data_dir="../../data/clean_data"
 
 # arquivo NCM_SH4
 #cabecalho 
@@ -28,7 +28,16 @@ sed -r -n '1s/","/"#"/pg' $data_dir/NCM_SH_UTF8.csv | cut -d# -f14-17 > $clean_d
 sed -r -n '2,$s/","/"#"/pg' $data_dir/NCM_SH_UTF8.csv | cut -d# -f14-17 | sort | uniq >> $clean_data_dir/ncm_secrom
 
 
+# file UF_MUN_UTF8.csv
+cut -f 2-3,5 -d , $data_dir/UF_MUN_UTF8.csv > $clean_data_dir/MUNICIPIOS.csv
 
+
+# file PORTO_UTF8.csv
+cut -f 2-4 -d , $data_dir/PORTO_UTF8.csv > $clean_data_dir/PORTOS.csv
+
+
+# file UF_UTF_8
+cut -f 2-5 -d , $data_dir/UF_UTF8.csv > $clean_data_dir/UF.csv
 
 
 
