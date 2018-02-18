@@ -1,0 +1,3 @@
+necessary include all loads script in a single life, paying attention for the correct order of execution
+
+all data to be loaded must be in directory allowed by MySQL
